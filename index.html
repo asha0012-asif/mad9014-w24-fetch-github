@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GitHub Fetch</title>
+
+        <link rel="stylesheet" href="./css/css-reset.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <h1 class="header__title">GitHub Fetch</h1>
+            </div>
+        </header>
+        
+        <main>
+            <section class="search">
+                <div class="container">
+                    <form action="">
+                        <div class="form-grid">
+                            <input type="text" name="user-name" id="user-name" placeholder="Enter GitHub username">
+
+                            <button type="submit" id="search-btn" class="btn">Search</button>
+                            <button type="reset" id="clear-btn" class="btn">Clear</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="repo-display">
+                <div class="container">
+                    <h2 id="message">GitHub User Public Repos Search</h2>
+                    <ul id="repo-list" class="repo-list"></ul>
+                </div>
+            </section>
+        </main>
+
+        <script src="./js/main.js"></script>
+    </body>
+</html>
